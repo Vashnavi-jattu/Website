@@ -625,53 +625,15 @@ section .button button:hover{
 
 /*  Education section starts */
 
-.education{
-  background-color: var(--secondary-bg-color);
-}
-.education .heading{
+.education .education-container {
   display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-.education .heading span{
-  color: #0E2431;
-  font-size: 30px;
-  font-weight: 600;
-  position: relative;
-  padding-bottom: 8px;
-}
-.education .heading span::before,
-.education .heading span::after{
-  content: '';
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: #4070f4;
-  left: 0;
-  bottom: 0;
-}
-.education .heading span::after{
-  bottom: -7px;
-  width: 70%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.education .qoute{
-  font-size: 1.5rem;
-  text-align:center;
-  font-weight: 600;
-  margin-top: 0.5rem;
-  font-family: "Nuiton", "sans-serif";
-}
-.education .education-content{
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-
+  align-items: center; /* Centers the boxes horizontally */
+  justify-content: center; /* Optional: vertically center */
+  gap: 2rem; /* Adds spacing between the boxes */
 }
-.education .education-container .education-box{
+
+.education .education-container .education-box {
   display: flex;
   flex-direction: row;
   width: 90%;
@@ -682,73 +644,9 @@ section .button button:hover{
   overflow: hidden;
   transition: 0.3s;
   background: #D0F1FF;
-  position: left;
-}
-.education .education-container .education-box:hover{
-  transform: scale(1.03);
-  box-shadow: 1rem 0.5rem 1rem #D0F1FF;
-}
-.education .education-container .education-box .image{
-  flex: 1 1 20rem;
-  width: 350px;
-  height: 350px;
-}
-.education .education-container .education-box .image img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   position: relative;
 }
-.education .education-container .education-box .education-content{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  flex-wrap: wrap;
-  flex: 1 1 70rem;
-}
-.education .education-container .education-box .education-content h3{
-  font-size: 2rem;
-  color: var(--main-color);
-  padding: 0.5rem 0;
-  font-weight: 600;
-  text-align: left;
-  margin-left: 1rem;
-}
-.education .education-container .education-box .education-content p{
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  text-align: left;
-}
-.education .education-container .education-box .education-content h4{
-  font-size: 2rem;
-  text-align: left;
-  margin: 1rem;
-  font-weight: 700;
-  font-family: "Nuiton", "sans-serif";
-  color: #012970;
-}
-@media screen and (max-width: 600px){
-  .education .education-container .education-box{
-      flex-direction: column;
-      width: 100%;
-  }
-  .education .education-container .education-box .image{
-      width: 100%;
-      height: 25rem;
-  }
-  .education .education-container .education-box .image img{
-      width: 100%;
-  }
-  .education .education-container .education-box .education-content{
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      padding: 1rem;
-      flex-wrap: wrap;
-      flex: 0;
-  }
-}
+
 
 /*  Education section ends */
 
